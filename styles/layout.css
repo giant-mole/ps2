@@ -1,0 +1,51 @@
+/* layout */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* deze eigenschap zorgt ervoor dat de padding en margin mee worden gerekend bij het definiëren van de totale breedte en hoogte van een element */
+}
+
+body {
+	font-family: 'roboto', sans-serif;
+	background-color: #e5e5e5;
+}
+
+.container {
+	width: 100%; /* vaste breedte, maar kan natuurlijk ook min/max en in percentages */
+	/* width: 80%; */
+	overflow: hidden; /* clearfix */
+	margin: 0 auto; /* zet de hele container in het midden */
+	background-color: #fff;
+}
+
+.column-wrapper,
+main {
+	width: 100%;
+	overflow: hidden; /* clearfix */
+}
+
+.column-wrapper {
+	display: flex;
+	padding: 0 0 20px 0;
+}
+
+.column {
+	padding: 0 40px 0 0;
+}
+
+.intro {
+	padding: 0 0 20px 0;
+}
+
+footer {
+	font-size: 0.8125rem;
+	text-align: center;
+	padding: 10px;
+}
+
+/* voorbeeld media query */
+/* @media only screen and (min-width: 800px) {
+	body {
+		background: lightblue;
+	}
+} */

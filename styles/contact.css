@@ -1,0 +1,63 @@
+/* contact */
+.contact {
+	margin: 40px 0 20px 0;
+	border-top: 1px dashed #C4C4C4;
+}
+
+.contact h2 {
+	font-size: 1.375rem;
+	margin: 40px 0 20px 0;
+}
+
+.contact p {
+	max-width: 75ch;
+	font-size: 0.875rem;
+}
+
+.field-container {
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+}
+
+form {
+	margin: 0 auto;
+	width: 590px;
+	overflow: hidden;
+}
+
+.field-container label {
+	width: 114px;
+	float: left;
+	font-weight: 700;
+	padding: 8px 0;
+}
+
+/* met input[type=email], input[type=text] en 
+input[type=submit], worden deze specifieke input elementen gestyled */
+
+input[type=email],
+input[type=text] {
+	width: 207px;
+	padding: 8px 10px;
+	border: 1px solid #828282;
+}
+
+textarea {
+	display: block;
+	clear: left;
+	width: 590px;
+	height: 160px;
+	padding: 8px 10px;
+	border: 1px solid #828282;
+}
+
+input[type=submit] {
+	float: right;
+	width: 191px;
+	height: 42px;
+	border: 0;
+	font-size: 0.875rem;
+	text-align: center;
+	background-color: #C4C4C4;
+
+}

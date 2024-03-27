@@ -1,0 +1,33 @@
+/* header */
+header {
+	margin-bottom: 20px;
+}
+
+.navbar{
+	display: flex;
+	padding:0 10% 0 10%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.logo{
+	margin-bottom: -50px;
+	width: 50%;
+	z-index: 2;
+	background-color: #044888;
+	position: relative;
+	padding: 20px;
+	border-radius: 0 0 20% 20%;
+}
+#engelseVlag{
+	width: 30px;
+}
+.bannerFoto{
+	width: 100%;
+}
+
