@@ -9,7 +9,7 @@
   }
   html{
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 16;
   }
 H1{
       font-family: 'Roboto', sans-serif;
@@ -53,6 +53,15 @@ p {
 .nieuweSpelers h2{
 	color:#044888
 
+}
+.contact-link{
+  color:#044888;
+}
+.column-nieuws p{
+	color:#000000;
+}
+.column-h2{
+	color:#000000	
 }
 @media only screen and (max-width: 767px) {
 p{font-size: 16px;

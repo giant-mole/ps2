@@ -2,30 +2,31 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box; /* deze eigenschap zorgt ervoor dat de padding en margin mee worden gerekend bij het definiëren van de totale breedte en hoogte van een element */
+	box-sizing: border-box;
+	/* deze eigenschap zorgt ervoor dat de padding en margin mee worden gerekend bij het definiëren van de totale breedte en hoogte van een element */
 
 }
 
 body {
 	font-family: 'roboto', sans-serif;
 	background-color: #e5e5e5;
-	
+
 }
 
 .container {
 	/* width: 100%; vaste breedte, maar kan natuurlijk ook min/max en in percentages */
 
-	overflow: hidden; /* clearfix */
+	overflow: hidden;
+	/* clearfix */
 	background-color: #044888;
 	column-gap: 10px;
 
-	
+
 }
 
 
 
-.column-wrapper-info
-{
+.column-wrapper-info {
 
 	justify-self: stretch;
 	display: flex;
@@ -33,8 +34,8 @@ body {
 	background-color: #044888;
 
 }
-.column-wrapper-info-reversed
-{
+
+.column-wrapper-info-reversed {
 
 	justify-self: stretch;
 	display: flex;
@@ -44,77 +45,99 @@ body {
 
 
 }
-.column-info-tekst{
-/* margin:8% 10% 2% 10%; */
-padding: 0% 10% 2% 10%;
-width: 50%;
-display: flex;
 
-align-items: center;
+/* zorgt voor het vakje waar de tekst in komt */
+.column-info-tekst {
+	/* margin:8% 10% 2% 10%; */
+	padding: 0% 10% 2% 10%;
+	width: 50%;
+	display: flex;
+
+	align-items: center;
+
 }
+
+/* zorgt voor dat column met de tekst 50% breed is */
 .column-info {
-width:50%;
+	width: 50%;
 
 }
-.foto{
-	width:100%;
+
+/* voor de naast elk stukje tekst  */
+.foto-aside {
+	width: 100%;
+	height: 100%;
 }
-.normal-button,.normal-button:active,.normal-button:visited,.normal-button:hover{
-	background-color:#F9BB55;
-	border:none;
+
+.normal-button,
+.normal-button:active,
+.normal-button:visited,
+.normal-button:hover {
+	background-color: #F9BB55;
+	border: none;
 	position: absolute;
-	color:#000000;
+	color: #000000;
 	text-decoration: none;
-	padding:10px 25px 10px 25px;
+	padding: 10px 25px 10px 25px;
 	border-radius: 25px;
 	font-size: 24px;
 }
 
-
-.column-wrapper-wedstrijd{
+/* de parent van waar alle agenda wedstrijden in komen */
+.column-wrapper-wedstrijd {
 	padding: 2% 10% 2% 10%;
 	background-color: #fff;
 
-	display:grid;
+	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* de rechthoeken waar de wedstrijden in komen */
 .column-wedstrijd {
-	display:flex;
+	display: flex;
 	box-shadow: 5px 10px rgba(0, 0, 0, 0.207);
 	background-color: #F9BB55;
 	padding: 5%;
-	gap:10px;
-flex-direction: row;
-align-items: center;	
+	gap: 10px;
+	flex-direction: row;
+	align-items: center;
 }
+
+/* de rechthoeken waar de wedstrijden i n komen */
+
 .column-wedstrijd-2 {
-	display:flex;
+	display: flex;
 	box-shadow: 5px 10px rgba(0, 0, 0, 0.207);
 	background-color: #F9BB55;
 	padding: 5%;
-	gap:10px;
-flex-direction: row;
-align-items: center;	
+	gap: 10px;
+	flex-direction: row;
+	align-items: center;
 }
+/* de rechthoeken waar de wedstrijden i n komen */
+
 .column-wedstrijd-3 {
-	display:flex;
+	display: flex;
 	box-shadow: 5px 10px rgba(0, 0, 0, 0.207);
 	background-color: #F9BB55;
 	padding: 5%;
-	gap:10px;
-flex-direction: row;
-align-items: center;	
+	gap: 10px;
+	flex-direction: row;
+	align-items: center;
 }
-.logo-wedstrijd1{
+/* de logo's van de teams die in de wedstrijd spelen */
+.logo-wedstrijd1 {
 	width: 50%;
 
 }
-.logo-wedstrijd2{
+/* de logo's van de teams die in de wedstrijd spelen */
+
+.logo-wedstrijd2 {
 	width: 50%;
 
 }
+
 footer {
 	font-size: 0.8125rem;
 	text-align: center;
@@ -122,57 +145,63 @@ footer {
 	background-color: #044888;
 	padding: 2% 10% 2% 10%;
 
-	display:grid;
+	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-iframe{
-	width: 400px;
-	 height:450px;
+iframe {
+	width: 500px;
+	height: 450px;
 }
-
-.column-logos{
-	display:flex;
+/* de logo's in de footer */
+.column-logos {
+	display: flex;
 	justify-content: space-around;
-	align-items: center;	
+	align-items: center;
 	flex-wrap: wrap;
 }
-.logo-facebook{
+
+.logo-facebook {
 	width: 33%;
-}
-.logo-instagram{
-	width: 33%;
-}
-.logo-rugby{
-	width: 50%;
 }
 
-.nieuweSpelers{
+.logo-instagram {
+	width: 33%;
+}
+
+.logo-rugby {
+	width: 50%;
+}
+/* wite stuk in de lidmaatschapspagina */
+.nieuweSpelers {
 	padding: 2% 10% 2% 10%;
 	background-color: #ffffff;
 }
-
-.normale-tekst{
+/* voor de pagina's waar alleen tekst staat en geen foto's aan de zijkant */
+.normale-tekst {
 	padding: 2% 10% 2% 10%;
 
 }
+/* styling accordion */
 .accordion {
 	cursor: pointer;
-background-color: #044888;
+	background-color: #044888;
 	border: none;
 	outline: none;
 
-  }
-  .panel {
+}
+
+.panel {
 	display: none;
 	overflow: hidden;
-  }
-  .column-wrapper-nieuws{
+}
+
+.column-wrapper-nieuws {
 	padding: 2% 10% 2% 10%;
 	background-color: #044888;
 
-	display:grid;
+	display: grid;
 	gap: 50px;
 	grid-template-columns: 1fr 1fr;
 }
@@ -183,249 +212,270 @@ background-color: #044888;
 	box-shadow: 5px 10px rgba(0, 0, 0, 0.207);
 	background-color: #F9BB55;
 	padding: 5%;
-	gap:20px;
+	gap: 20px;
 	align-items: center;
-	text-align: center;	
+	text-align: center;
 }
-.column-nieuws p,h2{
-	color:#000000;
-}
-.column-h2{
-	color:#000000	
-}
-.nieuws-button,.nieuws-button:active,.nieuws-button:visited,.nieuws-button:hover{
-	background-color:#ffffff;
-	border:1px solid #ffffff;
-	color:#000000;
+
+.nieuws-button,
+.nieuws-button:active,
+.nieuws-button:visited,
+.nieuws-button:hover {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+	color: #000000;
 	text-decoration: none;
-	padding:10px 25px 10px 25px;
+	padding: 10px 25px 10px 25px;
 	border-radius: 25px;
 	font-size: 24px;
-align-items: end;}
-.nieuws-button:hover{
-	background-color:#044888;
-	border:1px solid #ffffff;
-	color:#ffffff;
+	align-items: end;
+}
+
+.nieuws-button:hover {
+	background-color: #044888;
+	border: 1px solid #ffffff;
+	color: #ffffff;
 	text-decoration: none;
-	padding:10px 25px 10px 25px;
+	padding: 10px 25px 10px 25px;
 	border-radius: 25px;
 	font-size: 24px;
 }
 
 .flip-card {
-	width: 300px;
+	width: 400px;
 	height: 300px;
-  }
-  
-  .flip-card-inner {
+}
+
+.flip-card-inner {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	text-align: center;
 	transition: transform 0.6s;
-	transform-style: preserve-3d;/* zorgt dat de inner zigtbaar blijft*/
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
+	transform-style: preserve-3d;
+	/* zorgt dat de inner zigtbaar blijft*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
-  }
-  /*zorgt ervoor dat de achterkant niet aan de onderkant komt en altijd zichtbaar is*/
-  .flip-card-front, .flip-card-back {
+}
+
+/*zorgt ervoor dat de achterkant niet aan de onderkant komt en altijd zichtbaar is*/
+.flip-card-front,
+.flip-card-back {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	/* geen idee wat deze doen */
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
+}
+
+.flip-card-front {
 	background-color: #F9BB55;
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
-  }
-  
-  .flip-card-back {
+	justify-content: center;
+}
+
+.flip-card-back {
 	background-color: #F9BB55;
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
+	justify-content: center;
 	transform: rotateY(180deg);
-  }
-  .contactfotofront{
-	width:70%;
-	height:200px;
+}
+
+.contactfotofront {
+	width: 50%;
+	height: 200px;
 
 	border-radius: 100%;
-  }
-  .contactfotoback{
-	width: 40%;
-	height:100px;
+}
+
+.contactfotoback {
+	width: 30%;
+	height: 100px;
 
 	border-radius: 50%;
-  }
-  
-  .column-wrapper-contact{
+}
+
+.column-wrapper-contact {
 	padding: 2% 10% 2% 10%;
 	background-color: #044888;
-
-	display:grid;
+	display: grid;
 	gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr;
+
 }
+
 /* voorbeeld media query */
 @media only screen and (max-width: 767px) {
-	body{
+	body {
 		background-color: #fff;
 	}
-	.column-wrapper-info
-	{
+
+	.column-wrapper-info {
 		align-items: center;
 		/* justify-self: stretch; */
 		/* display: flex; */
 		flex-direction: column-reverse;
 		background-color: #044888;
-	
+
 	}
-	.column-wrapper-info-reversed
-	{
-	
+
+	.column-wrapper-info-reversed {
+
 		justify-self: stretch;
 		display: flex;
 		flex-direction: column-reverse;
 		background-color: #044888;
 		align-items: center;
-	
-	
+
+
 	}
-	.column-wrapper-contact{
+
+	.column-wrapper-contact {
 		padding: 2% 10% 2% 10%;
 		background-color: #044888;
-	
-		display:grid;
+
+		display: grid;
 		gap: 20px;
 		grid-template-columns: 1fr;
 		justify-items: center;
 	}
-	.column-wrapper-nieuws{
+
+	.column-wrapper-nieuws {
 		padding: 2% 10% 2% 10%;
 		background-color: #044888;
-	
-		display:grid;
+
+		display: grid;
 		gap: 50px;
 		grid-template-columns: 1fr;
 	}
-	
-	.column-info-tekst{
-	/* margin:8% 10% 2% 10%; */
-	padding: 0% 10% 2% 10%;
-	margin-bottom: 50px;
-	width: 100%;
-	display: flex;
-	
-	text-align: center;	
+
+	.column-info-tekst {
+		/* margin:8% 10% 2% 10%; */
+		padding: 0% 10% 2% 10%;
+		margin-bottom: 50px;
+		width: 100%;
+		display: flex;
+
+		text-align: center;
 	}
+
 	.flip-card {
 		width: 300px;
 		height: 250px;
-	  }
-	  .contact-footer{
-		font-size: 16px;
-	  }
-	.contactfotofront{
-		width:70%;
-		height:150px;
-	
-		border-radius: 100%;
-	  }
-	  .contactfotoback{
-		width: 40%;
-		height:100px;
-	
-		border-radius: 50%;
-	  }
-	.foto{
-		width: 100%; height: 100%; margin: 0; padding: 0;
-
 	}
-	.normal-button,.normal-button:active,.normal-button:visited,.normal-button:hover{
-		background-color:#F9BB55;
-		border:none;
+
+	.contact-footer {
+		font-size: 16px;
+	}
+
+	.contactfotofront {
+		width: 70%;
+		height: 150px;
+
+		border-radius: 100%;
+	}
+
+	.contactfotoback {
+		width: 40%;
+		height: 100px;
+
+		border-radius: 50%;
+	}
+
+	.normal-button,
+	.normal-button:active,
+	.normal-button:visited,
+	.normal-button:hover {
+		background-color: #F9BB55;
+		border: none;
 		position: absolute;
-		color:#000000;
+		color: #000000;
 		text-decoration: none;
-				padding:10px 25px 10px 25px;
+		padding: 10px 25px 10px 25px;
 		border-radius: 25px;
 		font-size: 16px;
 	}
-	
-	
-	.column-wrapper-wedstrijd{
+
+
+	.column-wrapper-wedstrijd {
 		padding: 2% 10% 2% 10%;
 		background-color: #fff;
-	
-		display:grid;
+
+		display: grid;
 		gap: 20px;
 		grid-template-columns: 1fr;
-		margin-bottom:25px ;
+		margin-bottom: 25px;
 		margin-top: 25px;
 
 	}
-	
+
 	.column-wedstrijd {
-		display:flex;
+		display: flex;
 		box-shadow: 5px 10px rgba(0, 0, 0, 0.207);
 		background-color: #F9BB55;
 		padding: 5%;
-		gap:10px;
-	flex-direction: row;
-	align-items: center;	
+		gap: 10px;
+		flex-direction: row;
+		align-items: center;
 	}
+
 	.column-wedstrijd-2 {
-		display:none;
+		display: none;
 
 	}
+
 	.column-wedstrijd-3 {
-		display:none;
+		display: none;
 
 	}
-	.logo-wedstrijd1{
+
+	.logo-wedstrijd1 {
 		width: 50%;
-	
+
 	}
-	.logo-wedstrijd2{
+
+	.logo-wedstrijd2 {
 		width: 50%;
 	}
+
 	footer {
 		font-size: 0.8125rem;
 		text-align: center;
 		background-color: #044888;
 		padding: 2% 10% 2% 10%;
-	
-		display:grid;
+
+		display: grid;
 		gap: 20px;
 		grid-template-columns: 1fr;
 	}
-	
-	iframe{
+
+	iframe {
 		width: 300px;
-		 height:300px;
+		height: 300px;
 	}
-	
-	.column-logos{
-		display:flex;
+
+	.column-logos {
+		display: flex;
 		justify-content: space-around;
-		align-items: center;	
+		align-items: center;
 		flex-wrap: wrap;
 	}
-	.logo-facebook{
+
+	.logo-facebook {
 		width: 33%;
 	}
-	.logo-instagram{
+
+	.logo-instagram {
 		width: 33%;
 	}
-	.logo-rugby{
+
+	.logo-rugby {
 		width: 50%;
 	}
 

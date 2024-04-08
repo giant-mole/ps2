@@ -1,7 +1,8 @@
 /* navigation */
 nav ul{
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
+
 }
 
 nav ul li {
@@ -9,34 +10,26 @@ nav ul li {
 	}
 
 .subnav .subnavbtn { 
-		font-size: 36px;
+		font-size: 30px;
 		background-color: transparent;
 		text-decoration: underline;
 		border: none;
 		outline: none;
 		color: #044888;
 	  }
-/* .subnav:active .subnavbtn:active { 
-		font-size: 24px;
-		background-color: transparent;
-		text-decoration: underline;
-		border: none;
-		outline: none;
-		color: #E41A30;
-	  } */
 
 .subnav-content {
 	display: none;
 	position: absolute;
 	min-width: 160px;
-	 
+
 	z-index: 1;
 	  }
 	  
 .subnav-content a {
 		color: #044888;
 		text-decoration: underline;
-			font-size: 36px;
+			font-size: 30px	;
 
 	  }
 	    
@@ -51,30 +44,26 @@ nav ul li a {
 	color: #044888;
 	text-decoration: underline;
 	padding: 0 15px;
-	font-size: 36px;
+	font-size: 30px;
 }
-
 nav ul li a:visited {
 	color: #044888;
 	text-decoration: underline;
 	padding: 0 15px;
-	font-size: 36px;
+	font-size: 30px;
 }
-nav ul li.active a::before {
-    content: '';
-    position: absolute;
-    left: -10px; 
-    top: 50%; 
-    transform: translateY(-50%);
-    width: 6px;
-    height: 20px; 
-    background-color: #73C3E0; 
+nav ul li a:hover {
+	color: #E41A30;
+	text-decoration: underline;
+	padding: 0 15px;
+	font-size: 30px;
 }
+
 nav ul li.active a {
 	color: #E41A30;
 	text-decoration: underline;
 	padding: 0 15px;
-	font-size: 36px;
+	font-size: 30px;
 }
 @media only screen and (max-width: 767px) {
 	nav ul {
@@ -106,12 +95,7 @@ nav ul li.active a {
 		text-decoration: underline;
 			font-size: 24px;
 
-	  }nav ul li.active a {
-		color: #E41A30;
-		text-decoration: underline;
-		padding: 0 15px;
-		font-size: 24px;
-	}
+	  }
 	.subnav .subnavbtn { 
 		font-size: 24px;
 		background-color: transparent;
