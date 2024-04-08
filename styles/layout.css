@@ -25,7 +25,7 @@ body {
 }
 
 
-
+/* zorgt voor het stuk website waar er aan de ene kant tekst en de andere kant foto */
 .column-wrapper-info {
 
 	justify-self: stretch;
@@ -35,6 +35,7 @@ body {
 
 }
 
+/* zorgt voor het stuk website waar er aan de ene kant tekst en de andere kant foto */
 .column-wrapper-info-reversed {
 
 	justify-self: stretch;
@@ -68,7 +69,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
+/* styling van alle normale knoppen */
 .normal-button,
 .normal-button:active,
 .normal-button:visited,
@@ -139,7 +140,6 @@ body {
 }
 
 footer {
-	font-size: 0.8125rem;
 	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	background-color: #044888;
@@ -161,14 +161,17 @@ iframe {
 	align-items: center;
 	flex-wrap: wrap;
 }
+/* de logo's in de footer */
 
 .logo-facebook {
 	width: 33%;
 }
+/* de logo's in de footer */
 
 .logo-instagram {
 	width: 33%;
 }
+/* de logo's in de footer */
 
 .logo-rugby {
 	width: 50%;
@@ -191,12 +194,12 @@ iframe {
 	outline: none;
 
 }
-
+/* is voor de css van de javascript? */
 .panel {
 	display: none;
 	overflow: hidden;
 }
-
+/* de parent van de nieuws items */
 .column-wrapper-nieuws {
 	padding: 2% 10% 2% 10%;
 	background-color: #044888;
@@ -205,7 +208,7 @@ iframe {
 	gap: 50px;
 	grid-template-columns: 1fr 1fr;
 }
-
+/* de nieuwsitems zelf */
 .column-nieuws {
 	display: flex;
 	flex-direction: column;
@@ -216,11 +219,11 @@ iframe {
 	align-items: center;
 	text-align: center;
 }
-
+/* styling van de knoppen op de nieuws items */
 .nieuws-button,
 .nieuws-button:active,
-.nieuws-button:visited,
-.nieuws-button:hover {
+.nieuws-button:visited
+ {
 	background-color: #ffffff;
 	border: 1px solid #ffffff;
 	color: #000000;
@@ -240,7 +243,16 @@ iframe {
 	border-radius: 25px;
 	font-size: 24px;
 }
+/* parent van de contact pagina waar de cardflips in staan */
+.column-wrapper-contact {
+	padding: 2% 10% 2% 10%;
+	background-color: #044888;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
 
+}
+/* alles met cardflip heb ik van w3 schools overgenomen */
 .flip-card {
 	width: 400px;
 	height: 300px;
@@ -286,31 +298,23 @@ iframe {
 	justify-content: center;
 	transform: rotateY(180deg);
 }
-
-.contactfotofront {
+/* de cardflip foto voorkant */
+.contact-foto-front {
 	width: 50%;
 	height: 200px;
 
 	border-radius: 100%;
 }
+/* de cardflip foto achterkant */
 
-.contactfotoback {
+.contact-foto-back {
 	width: 30%;
 	height: 100px;
 
 	border-radius: 50%;
 }
 
-.column-wrapper-contact {
-	padding: 2% 10% 2% 10%;
-	background-color: #044888;
-	display: grid;
-	gap: 20px;
-	grid-template-columns: 1fr 1fr 1fr;
 
-}
-
-/* voorbeeld media query */
 @media only screen and (max-width: 767px) {
 	body {
 		background-color: #fff;
@@ -320,7 +324,7 @@ iframe {
 		align-items: center;
 		/* justify-self: stretch; */
 		/* display: flex; */
-		flex-direction: column-reverse;
+		flex-direction: column-reverse;/*zorgt ervoor dat de foto's en tekst van plek verwisselen*/
 		background-color: #044888;
 
 	}
@@ -329,7 +333,7 @@ iframe {
 
 		justify-self: stretch;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column-reverse;/*zorgt ervoor dat de foto's en tekst van plek verwisselen*/
 		background-color: #044888;
 		align-items: center;
 
@@ -342,7 +346,7 @@ iframe {
 
 		display: grid;
 		gap: 20px;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr;/*zorgt voor 1 breedte*/
 		justify-items: center;
 	}
 
@@ -352,7 +356,7 @@ iframe {
 
 		display: grid;
 		gap: 50px;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr;/*zorgt voor 1 breedte*/
 	}
 
 	.column-info-tekst {
@@ -374,14 +378,14 @@ iframe {
 		font-size: 16px;
 	}
 
-	.contactfotofront {
+	.contact-foto-front {
 		width: 70%;
 		height: 150px;
 
 		border-radius: 100%;
 	}
 
-	.contactfotoback {
+	.contact-foto-back {
 		width: 40%;
 		height: 100px;
 
@@ -409,7 +413,7 @@ iframe {
 
 		display: grid;
 		gap: 20px;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr;/*zorgt voor 1 breedte*/
 		margin-bottom: 25px;
 		margin-top: 25px;
 
@@ -426,12 +430,12 @@ iframe {
 	}
 
 	.column-wedstrijd-2 {
-		display: none;
+		display: none;/*zorgt ervoor dat de 2e westrijd niet te zien is op telefoon*/
 
 	}
 
 	.column-wedstrijd-3 {
-		display: none;
+		display: none;/*zorgt ervoor dat de 3e westrijd niet te zien is op telefoon*/
 
 	}
 

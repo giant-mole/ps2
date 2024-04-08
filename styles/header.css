@@ -13,15 +13,15 @@
 	align-items: center;
 }
 .navbar-2 {
-	display: none;
+	display: none;/*zorgt ervoor dat header niet te zien is op desktop*/
 
 }
 
 
 .logo-desktop {
-	margin-bottom: -50px;
+	margin-bottom: -50px;/*zorgt ervoor het logo onder de nav uit komt*/
 	width: 50%;
-	z-index: 2;
+	z-index: 2;/*zorgt ervoor dat het logo boven alles komt*/
 	background-color: #044888;
 	position: relative;
 	padding: 20px;
@@ -108,7 +108,7 @@
 		align-items: center;
 	}
 	.navbar {
-		display: none;
+		display: none;/*zorgt ervoor dat header niet te zien is op telefoon*/
 		top: 0;
 		z-index: 1;
 		background-color: #fff;
